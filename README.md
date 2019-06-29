@@ -1,5 +1,9 @@
 # DictionaryAPI
 Testing ground for dictionary.com API fun
 
-## API Link
-https://dictionaryapi.com/products/api-collegiate-thesaurus
+## API Links
+
+- Dictionary
+    - https://dictionaryapi.com/products/api-collegiate-dictionary
+- Thesaurus
+    - https://dictionaryapi.com/products/api-collegiate-thesaurus
