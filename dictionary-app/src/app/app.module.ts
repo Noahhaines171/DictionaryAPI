@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SearchComponent } from './components/search/search.component';
+import { DictionaryComponent } from './components/dictionary/dictionary.component';
+import { ThesaurusComponent } from './components/thesaurus/thesaurus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     HeaderComponent,
-    SearchComponent
+    SearchComponent,
+    DictionaryComponent,
+    ThesaurusComponent
   ],
   imports: [
     BrowserModule,
