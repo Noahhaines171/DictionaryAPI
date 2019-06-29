@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { SearchComponent } from './components/search/search.component';
 import { DictionaryComponent } from './components/dictionary/dictionary.component';
 import { ThesaurusComponent } from './components/thesaurus/thesaurus.component';
+import { DictionaryService } from './services/dictionary.service';
+import { ThesaurusService } from './services/thesaurus.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,10 @@ import { ThesaurusComponent } from './components/thesaurus/thesaurus.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    DictionaryService,
+    ThesaurusService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  DICTIONARY: {
+    BASE_URL: 'https://dictionaryapi.com/api/v3/references/collegiate/json/',
+    API_KEY: '387bdc36-eb5b-44b3-97c2-4b4b41b01845'
+  },
+
+  THESAURUS: {
+    BASE_URL: 'https://dictionaryapi.com/api/v3/references/thesaurus/json/',
+    API_KEY: '554815bb-07e9-4b24-8a1d-97e19d14d74f'
+  }
+
 };
 
 /*
