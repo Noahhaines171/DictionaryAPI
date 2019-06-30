@@ -11,8 +11,8 @@ export class DictionaryService {
 
   constructor(private httpClient: HttpClient) { }
 
-  search(searchTerm: string): DictionaryResponse {
-    let searchRepsonse: DictionaryResponse;
+  search(searchTerm: string): DictionaryResponse[] {
+    let searchRepsonse: DictionaryResponse[];
     const baseUrl = ENV.DICTIONARY.BASE_URL + searchTerm;
     const apiKey = ENV.DICTIONARY.API_KEY;
     const url = baseUrl + '?key=' + apiKey;
@@ -25,10 +25,16 @@ export class DictionaryService {
     return;
   }
 
-  mapDictionaryResponse(resp: object): DictionaryResponse {
-    let dictResp: DictionaryResponse;
+  mapDictionaryResponse(resp: object): DictionaryResponse[] {
+    let dictResp: DictionaryResponse[];
 
+    const defArray = resp[0];
+    defArray.array.forEach(this.mapWordObject);
 
     return dictResp;
+  }
+
+  mapWordObject(wordObject, index) {
+
   }
 }
